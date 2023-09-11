@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu de navegacion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-    <header> <img src="img/logo-UTN-1.png" class="logo" alt="Logo utn">
+    <header> 
         <nav>
+            <img src="https://www.utn.edu.ar/images/logo-utn.png" class="logo" alt="Logo utn">
             <ul>
                 <li><a href="#" class="active">Inicio</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
+            <div class="profile"> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655  6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
+    </div>
         </nav>
-        <div class="profile"> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655  6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </a>
-        </div>
+       
     </header>
     <main>
 
         <section class="main-image">
             <div class="img-background">
+                <img src="/css/fondo-background.png"/>
                 <h1>Bienvenido a la Universidad Tecnológica Nacional</h1>
             </div>
             <div class="img-content">
@@ -42,7 +48,58 @@
         </section>
     </main>
 
+    
+    <section class="carreras">
+        
+            <h2>Carreras Universitarias</h2>
+        <div class="carrera">
+            
+            <h3>Ingeniería Civil</h3>
+            <p>La INGENIERÍA CIVIL se ocupa del diseño (desarrollo creativo de una idea que se materializa) de obras que permiten modificar y aprovechar la naturaleza a fin de favorecer el desarrollo de la sociedad, mejorar la vida de sus miembros y facilitar la interconexión entre los pueblos.</p>
+        </div>
+        <div class="carrera">
+            <h3>Ingeniería Eléctrica</h3>
+            <p>La Ingeniería Eléctrica se ocupa del diseño (desarrollo creativo de una idea), la construcción (idea que se materializa) y el mantenimiento de medios y mecanismos necesarios para la obtención, generación, transmisión, distribución y utilización de la energía eléctrica.</p>
+        </div>
+        <div class="carrera">
+            <h3>Ingeniería Química</h3>
+            <p>La INGENIERÍA QUÍMICA es la rama de la ingeniería que se dedica al estudio, síntesis, desarrollo, diseño, operación y optimización de todos aquellos procesos industriales que producen cambios físicos, químicos y/o bioquímicos en los materiales.</p>
+        </div>
+        <div class="carrera">
+            <h3>Ingeniería en Sistemas de Información</h3>
+            <p>La Ingeniería en Sistemas de Información se ocupa del diseño (desarrollo creativo de una idea), implementación (idea que se materializa), organización y control de la información requerida por organismos públicos y privados.</p>
+        
+        
+    </section>
+
 
 </body>
 
+
+<!--Footer-->
+
+<footer>
+    <div class="grid-container">
+        <div class="column">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>UTN Facultad regional de Rosario</h4>
+            <p>Dirección: Zeballos 1341</p>
+            <p>Teléfono: 161565165165</p>
+            <p>Correo: contacto@contacto.com</p>
+        </div>
+        <div class="column">
+            <h4>Mapa de Ubicación</h4>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1N2j5TDLAL1OyOrAuCYcNVyY07nM&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+            <!-- Aquí puedes insertar un mapa de ubicación, por ejemplo, usando un iframe de Google Maps -->
+        </div>
+
+    </div>
+</footer>
 </html>
