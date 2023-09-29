@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de celulares</title>
+    <link rel="stylesheet" href="css/style.css" > 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <script src="/app.js"></script>
+    <style>
+        /* Estilos para ocultar todos los divs por defecto */
+        .hidden {
+            display: none;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <!--Imagenes de los distintos colores de celulares-->
+    
+    <div class="product-image">
+        <div id="grafitoDiv" class="hidden">>
+            <img src="https://tienda.personal.com.ar/images/Iphone13pro_Graphite_min_4a8b32a8ff.png">
+        </div>
+        <div id="sierraDiv" class="hidden">
+            <img src="https://tienda.personal.com.ar/images/i_Phone_13_pro_sierra_blue_min_7a139db599.png">
+        </div>
+        <div id="silverDiv" class="hidden">
+            <img src="https://tienda.personal.com.ar/images/Iphone13_pro_Silver_min_5d9348c156.png">
+        </div>
+        <div id="goldDiv" class="hidden">
+            <img src="https://tienda.personal.com.ar/images/i_Phone13_pro_gold_min_2141166fa8.png">
+        </div>
+    </div>
+    <div class="product-details">
+        <div class="product-details-content">
+            <h2>Celulares</h2>
+            <form action="">
+                <div class="form-control">
+                    <label for="color">Color</label>
+                    <select id="color" onchange="changeProductImage()" required>
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="grafito">Grafito</option>
+                        <option value="sierra">Sierra</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </div>
+
+
+                <div class="form-control">
+                    <label for="capacidad">Capacidad</label>
+                    <select id="capacidad">
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="128">128 GB</option>
+                        <option value="256">256 GB</option>
+                        <option value="512">512 GB</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="text" id="cantidad" />
+                </div>
+                <div class="form-control">
+                    <button type="button" class="cotizarButton" id="calcular-btn" onclick="calculatePrice()">Cotizar</button>
+                </div>
+                <div id="result" class="form-control">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>
+</body>
+</html>

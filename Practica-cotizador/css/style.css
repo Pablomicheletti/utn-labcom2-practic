@@ -1,0 +1,49 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color:whitesmoke;
+    color:rgb(76, 25, 76);
+}
+
+.product-details{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+    
+}
+
+.product-image {
+    max-width: 200px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    max-height: 200px;
+}
+
+.cotizarButton{
+    color: white;
+    background-color: rgb(97, 29, 97);
+    margin: 50px;
+    padding: 10px 20px;
+    height: 70px;
+    width: 50%;
+    font: #FFF;
+    font-size: 28px;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    border: none;
+    
+}
+
+.cotizarButton:hover {
+    background-color: rgb(96, 21, 166);
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
